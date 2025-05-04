@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'directives1';
   isShow=false;
+  day:number=5;
+fruits=['apple','banana','cherry','date','papaya','mango','watermelon']
+
   handleClick(){
     this.isShow=true;  
   }
