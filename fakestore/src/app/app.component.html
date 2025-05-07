@@ -1,8 +1,12 @@
-<div class="products" [ngClass]="{'dark':isDark}">
-  <div *ngFor="let product of products" class="product" [ngStyle]="{'background-color':bgColor}">
+<div class="products" 
+[ngStyle]="{'fontSize':isHeading?'24px':'12px','background-color':bgColor}" >
+  <div *ngFor="let product of products" class="product"  [ngClass]="{'dark':isDark}">
     <img src="{{product.image}}" alt="" width="100px" height="100px">
-    <h3>{{product.title}}</h3>
-    <h4>price::{{product.price}}</h4>
+    <h3>{{product.title | uppercase}}</h3>
+    <p>{{dt| date }}</p>
+    <p>{{dt| date:'dd-MM-yy hh:mm:ss' }}</p>
+    <p>{{dt| date:'dd-MM-yyyy' }}</p>
+    <h4>price::{{product.price | currency:'INR'}}</h4>
     <button>Add To Cart</button>
   </div>
 </div>

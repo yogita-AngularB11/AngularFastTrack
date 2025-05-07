@@ -9,7 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'fakestore';
   bgColor= '#faebd7';
-  isDark=true;
+  isDark=false;
+  isHeading=true;
+  dt:any;
+  constructor(){
+    this.dt=new Date();
+    console.log(this.dt);
+    
+  }
   products:any[]=[
     {
       "id": 1,
