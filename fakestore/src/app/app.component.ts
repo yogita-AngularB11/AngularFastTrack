@@ -12,6 +12,7 @@ export class AppComponent {
   isDark=false;
   isHeading=true;
   dt:any;
+  b:number=9;
   constructor(){
     this.dt=new Date();
     console.log(this.dt);

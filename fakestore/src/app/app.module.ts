@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SquarePipe } from './square.pipe';
+import { PowerPipe } from './power.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SquarePipe
+    SquarePipe,
+    PowerPipe
   ],
   imports: [
     BrowserModule,
