@@ -1,0 +1,7 @@
+<p>I am parent Component</p>
+<!-- <p>{{child.c1}}</p> -->
+<p>{{bhujji.c1}}</p>
+<button (click)="increment()">Increment</button>
+<div style="height: 150px;width: 150px;border: 2px solid red;">
+    <app-child [count]="c" #bhujji></app-child>
+</div>
