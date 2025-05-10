@@ -1,6 +1,6 @@
 <div class="product">
-    <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/23079364/2023/8/31/3fb79283-873c-4fa5-8747-f98d7ea48e091693466409208-The-Roadster-Lifestyle-Co-Women-White--Pink-Colourblocked-Li-1.jpg" alt="" height="200">
-    <h1>Shoes</h1>
-    <p>Price:₹200 </p>
-    <button>Add To Cart</button>
-</div>
+    <img src="{{pro.img}}" alt="Shoes" height="200">
+    <h1>{{pro.name}}</h1>
+    <p>Price:₹{{pro.price}} </p>
+    <button (click)="increase()">Add To Cart</button>
+</div> 
